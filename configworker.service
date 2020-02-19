@@ -1,0 +1,9 @@
+[Unit]
+Description=Config Worker Test
+ 
+[Service]
+Type=notify
+ExecStart=/usr/sbin/configworker/ConfigWorker
+
+[Install]
+WantedBy=multi-user.target
